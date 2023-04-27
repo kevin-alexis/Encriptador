@@ -1,0 +1,228 @@
+body{
+    margin: 0;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*advice*/
+
+#advice-container{
+    background-color: red;
+
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    visibility: hidden;
+}
+
+.overlay.active{
+    visibility: visible;
+}
+
+
+.advice{
+    background-color: rgb(30, 48, 90);
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    position: relative;
+    margin: 10px;
+}
+
+.advice h2{
+    text-align: center;
+}
+
+.advice button{
+    color: #ffffff;
+    display: inline-block;
+    background: none;
+    border: none;
+    user-select: none;
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    right: 15px;
+    top: 15px;
+}
+
+.advice button:hover{
+    color: red;
+}
+
+
+/*Header*/
+header{
+    text-align: center;
+}
+
+h1{
+    color: rgb(30, 48, 90);
+}
+
+
+/*Main*/
+main{
+    background-color: #CCCCCC;
+    margin: 10px auto;
+    box-sizing: border-box;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.TextIn-container{
+    padding: 40px;
+}
+
+.TextIn-container textarea{
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.TextIn-container div{
+    display: flex;
+    justify-content: center;
+}
+
+.TextIn-container button{
+    cursor: pointer;
+    margin: 10px 50px 0 50px;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    transition: 1s;
+}
+
+
+.TextIn-container button:hover,
+.copy:hover{
+    background-color: rgb(30, 48, 90);
+    color: #ffffff;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.TextOut-container{
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.TextNotFound.active{
+    text-align: center;
+    visibility: visible;
+}
+
+.TextNotFound {
+    visibility: hidden;
+}
+
+
+
+.TextNotFound img{
+    width: 300px;
+}
+
+.TextOut{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.TextResult{
+    word-wrap: break-word;
+}
+
+.TextOut div{
+    padding: 5px 20px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.TextOut div button{
+    cursor: pointer;
+    margin: 5px 10px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: none;
+    transition: 1s;
+}
+
+.delete:hover{
+    background-color: rgb(141, 0, 0);
+    color: #ffffff;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+
+/*Footer*/
+footer{
+    padding: 20px;
+    background-color: rgb(30, 48, 90);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+footer > img{
+    filter: brightness(100);
+    width: 40px;
+}
+
+footer div{
+    display: flex;
+    align-items: center;
+}
+
+.information div a img{
+    width: 20px;
+    margin: 0 5px;
+}
+
+.information div{
+    margin: 0 10px;
+}
+
+@media (max-width: 1250px){
+    main{
+        display: block;
+    }
+
+    .TextNotFound img{
+        width: 100%;
+    }
+
+    .information{
+        display: block;
+    }
+
+    .information a{
+        align-items: center;
+    }
+
+    footer div{
+        justify-content: center;
+    }
+    
+}
+

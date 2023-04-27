@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto - Alura Challenges ONE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./styles.css">
+    
+</head>
+<body>
+
+    <header>
+        <h1>Encriptador de texto</h1>
+    </header>
+
+    <section id="advice-container">
+        <article class="overlay active">
+            <div class="advice">
+                <h2>Aviso</h2>
+                <button class="close-advise">X</button>
+                <ul>
+                    <li>Funciona solo con letras minúsculas</li>
+                    <li>No deben ser utilizados letras con acentos ni caracteres especiales</li>
+                </ul>
+            </div>
+        </article>
+    </section>
+
+    <main>
+        <section class="TextIn-container">
+            <form>
+                <textarea id="textarea" rows="16" placeholder="Enter text"></textarea>
+                <div>
+                    <button type="button" class="btn-encrypt">Encriptar</button>
+                    <button type="button" class="btn-decrypt">Desencriptar</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="TextOut-container">
+            <div class="TextNotFound active">
+                <img src="./assets/logos/Muñeco.svg" alt="">
+                <h2 class="TextResult">Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+            <img src="./assets/logos/logo-alura.svg" alt="">       
+        <div class="information">
+            <p>© Created by Kevin Alexis Bello Maldonado</p>
+            <div>
+                <a href="https://github.com/kevin-alexis"><img src="./assets/iconos/github.svg" alt=""></a>
+                <a href="https://www.linkedin.com/in/kevin-alexis-bello-maldonado/"><img src="./assets/iconos/linkedin.svg" alt=""></a>
+            </div> 
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
